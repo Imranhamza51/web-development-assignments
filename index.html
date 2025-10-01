@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homework exercises combining all HTML structure, text, and inline tags.">
+  <title>Homework Exercises Combined</title>
+  
+  <!-- External Resources -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <base href="https://mysite.example/resources/">
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- ABOUT.HTML (Exercise 1, Doc tags) -->
+  <!-- ============================= -->
+  <section id="about">
+    <h1>About This Site</h1>
+    <p>This page demonstrates HTML homework exercises with all required tags included.</p>
+    <p><a href="guide.html">Read the guide</a></p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- RESOURCES.HTML (Exercise 2, Doc tags) -->
+  <!-- ============================= -->
+  <section id="resources">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="slides.html">Slides</a></li>
+      <li><a href="lab1.html">Lab 1</a></li>
+      <li><a href="reference.html">Reference</a></li>
+    </ul>
+    <p>Encoding test: ✅ 🎉 áéíóú</p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- HOME.HTML (Exercise 1, Structure tags) -->
+  <!-- ============================= -->
+  <section id="home">
+    <header>
+      <h1>Welcome to My Homepage</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#cheatsheet">Cheatsheet</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Introduction</h2>
+        <article>
+          <h3>My Story</h3>
+          <p>I created this website as part of my web development homework. It includes all the tags requested.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <aside>
+          <h3>Contact Information</h3>
+          <address>
+            Email: <a href="mailto:student@example.com">student@example.com</a><br>
+            Location: Example City, Country
+          </address>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Homework Site</p>
+    </footer>
+  </section>
+
+  <!-- ============================= -->
+  <!-- BLOG.HTML (Exercise 2, Structure tags) -->
+  <!-- ============================= -->
+  <section id="blog">
+    <header>
+      <h2>My Blog</h2>
+    </header>
+    <nav>
+      <p>Site Navigation: <a href="#home">Home</a> | <a href="#cheatsheet">Cheatsheet</a></p>
+    </nav>
+    <section>
+      <article>
+        <h3>First Post</h3>
+        <p>This is a short summary of my first blog post.</p>
+      </article>
+      <article>
+        <h3>Second Post</h3>
+        <p>This is a summary of my second blog post.</p>
+      </article>
+      <article>
+        <h3>Third Post</h3>
+        <p>This is a summary of my third blog post.</p>
+      </article>
+    </section>
+    <footer>
+      <p>End of Blog Section</p>
+    </footer>
+  </section>
+
+  <!-- ============================= -->
+  <!-- ARTICLE.HTML (Exercise 1, Text & Inline tags) -->
+  <!-- ============================= -->
+  <section id="article">
+    <h2>Sample Article</h2>
+    <h3>Learning HTML</h3>
+    <p>Web development basics are important. The project is due on 
+       <time datetime="2025-10-15">October 15, 2025</time>.</p>
+    <p>As the professor said: <q>Practice makes perfect!</q></p>
+
+    <blockquote cite="https://developer.mozilla.org/">
+      “HTML is the standard markup language for creating Web pages.”
+    </blockquote>
+
+    <pre><code>
+function greet() {
+  console.log("Hello, world!");
+}
+    </code></pre>
+
+    <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your file.</p>
+  </section>
+
+  <!-- ============================= -->
+  <!-- CHEATSHEET.HTML (Exercise 2, Text & Inline tags) -->
+  <!-- ============================= -->
+  <section id="cheatsheet">
+    <h2>Cheatsheet</h2>
+    <ul>
+      <li><kbd>Ctrl</kbd> + <kbd>C</kbd> = Copy</li>
+      <li><kbd>Ctrl</kbd> + <kbd>V</kbd> = Paste</li>
+      <li><kbd>Ctrl</kbd> + <kbd>Z</kbd> = Undo</li>
+      <li><kbd>Ctrl</kbd> + <kbd>Y</kbd> = Redo</li>
+      <li><kbd>Alt</kbd> + <kbd>Tab</kbd> = Switch Windows</li>
+      <li><kbd>Ctrl</kbd> + <kbd>T</kbd> = New Tab</li>
+    </ul>
+    <p>Sample Output: <samp>Hello, User!</samp></p>
+    <p><strong>Strong text</strong>, <em>emphasized text</em>, 
+       <mark>highlighted text</mark>, 
+       <small>small note</small>, 
+       <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+    <p>Scientific Formula: H<sub>2</sub>O + CO<sub>2</sub> → C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + O<sup>2</sup></p>
+  </section>
+
+</body>
+</html>
