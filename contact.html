@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WebDev Course - Contact Us</title>
+    <style>
+      body {
+        background-color: #F7F4EF;
+        color: #7A7A7A;
+      }
+      main {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(202,194,179,0.10);
+      }
+      section h2 {
+        color: #7A7A7A;
+        border-left: 4px solid #CFC8BB;
+        padding-left: 12px;
+        margin-bottom: 18px;
+      }
+      article h3 {
+        color: #7A7A7A;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background: #F7F4EF;
+        padding: 10px 16px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(202,194,179,0.07);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      form {
+        background: #F7F4EF;
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(202,194,179,0.07);
+      }
+      label {
+        color: #7A7A7A;
+        font-weight: 500;
+      }
+      input, select, textarea {
+        border: 1px solid #CFC8BB;
+        border-radius: 5px;
+        padding: 8px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        width: 100%;
+        font-size: 1rem;
+        background: #fff;
+        color: #7A7A7A;
+      }
+      input[type="submit"] {
+        background: #CFC8BB;
+        color: #7A7A7A;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+        width: auto;
+        margin-right: 10px;
+      }
+      input[type="submit"]:hover {
+        background: #7A7A7A;
+        color: #F7F4EF;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        background: #F7F4EF;
+        color: #7A7A7A;
+        margin-bottom: 20px;
+      }
+      table th, table td {
+        border: 1px solid #CFC8BB;
+        padding: 10px;
+        text-align: left;
+      }
+      details {
+        display: block;
+        margin-bottom: 12px;
+        background: #F7F4EF;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(202,194,179,0.05);
+        padding: 8px 12px;
+      }
+      details summary {
+        color: #CFC8BB;
+        font-weight: bold;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+      details[open] {
+        background: #fff;
+        border: 1px solid #CFC8BB;
+      }
+      
+      footer {
+        background: #7A7A7A;
+        color: #F7F4EF;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+      .contact-method-group {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-top: 8px;
+        margin-bottom: 12px;
+      }
+      .contact-method-group label {
+        font-weight: 500;
+        color: #7A7A7A;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .contact-method-group input[type="radio"] {
+        accent-color: #CFC8BB;
+        margin-right: 6px;
+        transform: scale(1.2);
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WebDev Course</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            
+            <article>
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you. Please use the form below to send us a message.</p>
+                
+                <form action="contact-success.html" method="get">
+                    <p>
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </p>
+                    <p>
+                        <label for="contact-email">Your Email:</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </p>
+                    <p>
+                        <label for="contact-subject">Subject:</label>
+                        <select id="contact-subject" name="contact-subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="course">Course Information</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" name="contact-message" rows="6" cols="50" required></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send Message">
+                    </p>
+                </form>
+            </article>
+            
+            <article>
+                <h3>Our Location</h3>
+                <address>
+                    WebDev Training Center<br>
+                    123 Learning Street<br>
+                    Tech City, TC 10101<br>
+                    Phone: <a href="tel:+15551234567">(555) 123-4567</a>
+                </address>
+            </article>
+            
+            <article>
+                <h3>Office Hours</h3>
+                <table>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 AM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </article>
+            
+            <article>
+                <h3>Frequently Asked Questions</h3>
+                <details>
+                    <summary>What prerequisites do I need for the courses?</summary>
+                    <p>Our beginner courses require no prior experience. For intermediate and advanced courses, we recommend basic computer literacy and familiarity with using web browsers.</p>
+                </details>
+                
+                <details>
+                    <summary>How long do I have access to course materials?</summary>
+                    <p>You'll have lifetime access to all course materials once you enroll, including any future updates to the content.</p>
+                </details>
+                
+                <details>
+                    <summary>Do you offer payment plans?</summary>
+                    <p>Yes, we offer flexible payment plans for all our courses. Contact us for more information about available options.</p>
+                </details>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Web Development Course. All rights reserved.</p>
+       
+        <p>This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+</body>
+</html>
